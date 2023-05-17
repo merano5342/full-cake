@@ -1,15 +1,19 @@
-// import '../css/style.scss';
-import Nav from './Nav';
+import Banner from './Banner';
+import GiftBox from './GiftBox';
+import Shopline from './Shopline';
+import Intro from './Intro';
+import Recommend from './Recommend';
+import Footer from './Footer';
 
 const App = () => {
   return (
     <>
-      <Nav />
-      <div className="flex items-end justify-center pt-[160px]">
-        <button className="btn-primary">立即選購</button>
-        <button className="btn-outline">認識我們</button>
-      </div>
-      <div className="backgroundImg mt-[30px]"></div>
+      <Banner />
+      <GiftBox />
+      <Shopline />
+      <Intro />
+      <Recommend />
+      <Footer />
     </>
   );
 };

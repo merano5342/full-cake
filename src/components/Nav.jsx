@@ -1,7 +1,7 @@
 import React, { memo, useState } from 'react';
 // import '../css/style.scss';
 
-import cakeLogo from '../images/logo/en-logo-1-w.svg';
+import cakeLogo from '../images/logo/en-logo-w.svg';
 import Hamburger from '../images/icon/icon-hamburger.svg';
 
 const Nav = () => {
@@ -20,10 +20,10 @@ const Nav = () => {
     <div className="nav">
       <img src={cakeLogo} className="logoIcon" alt="" />
       <button
-        className="navItemsClosed border"
+        className="navItemsClosed"
         onClick={() => setActiveHamburger((pre) => !pre)}
       >
-        <img src={Hamburger} alt="" />
+        <img src={Hamburger} className="w-[20px]" alt="" />
       </button>
 
       <div className="navItemsOpen" data-active={activeHamburger}>

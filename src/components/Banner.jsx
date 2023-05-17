@@ -3,14 +3,13 @@ import Nav from './Nav';
 
 const Banner = () => {
   return (
-    <div className=" flex items-end justify-end">
-      <div className="backgroundImg mt-[30px]">
-        <Nav />
-        <div className="relative top-0 flex justify-center  pt-[200px]">
-          <button className="btn-primary">立即選購</button>
-          <button className="btn-outline">認識我們</button>
-        </div>
+    <div className="backgroundImg relative top-0 pt-4">
+      <Nav />
+      <div className="flex justify-center gap-4  pb-[200px] pt-[180px]">
+        <button className="btn-primary">立即選購</button>
+        <button className="btn-outline">認識我們</button>
       </div>
+      {/* <div className="backgroundImg"></div> */}
     </div>
   );
 };
