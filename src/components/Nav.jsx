@@ -1,6 +1,4 @@
-import React, { memo, useState } from 'react';
-// import '../css/style.scss';
-
+import { useState, memo } from 'react';
 import cakeLogo from '../images/logo/en-logo-w.svg';
 import Hamburger from '../images/icon/icon-hamburger.svg';
 
@@ -29,7 +27,7 @@ const Nav = () => {
       <div className="navItemsOpen" data-active={activeHamburger}>
         {itemsL.map((item) => (
           <div key={item.id} className="navItem">
-            <a href="">{item.title}</a>
+            <a href="./">{item.title}</a>
           </div>
         ))}
         <div className="w-[180px]">
@@ -37,7 +35,7 @@ const Nav = () => {
         </div>
         {itemsR.map((item) => (
           <div key={item.id} className="navItem">
-            <a href="">{item.title}</a>
+            <a href="./">{item.title}</a>
           </div>
         ))}
       </div>

@@ -7,6 +7,7 @@ import icon1 from '../images/logo/facebook-logo.png';
 import icon2 from '../images/logo/instagram-logo.png';
 import icon3 from '../images/logo/twitter-logo.png';
 import icon4 from '../images/logo/pinterest-logo.png';
+
 const Footer = () => {
   const data = {
     shopInfo: ['桃園市 台灣 Taiwan', 'service@fullcake.com', '(02) 2888 8888'],
@@ -60,12 +61,12 @@ const Footer = () => {
         <div className="md:pt-12">
           <h3 className="font-semi md:text-left">{data.email.title}</h3>
           <div className="items flex flex-col items-center gap-3 pt-6 md:items-start ">
-            <p className="whitespace-pre  text-xs md:text-left leading-5">
+            <p className="whitespace-pre  text-xs leading-5 md:text-left">
               {data.email.text}
             </p>
             <input
               type="email"
-              className="px-4 py-3 text-xs w-full"
+              className="w-full px-4 py-3 text-xs"
               placeholder="Your Email Address"
             />
             <div className="flex gap-3">
