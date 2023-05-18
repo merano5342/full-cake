@@ -33,13 +33,13 @@ const GiftBox = () => {
             tincidunt ut laoreet dolore magna aliquam erat volutpat lorem
           </p>
         </div>
-        <div className="flex flex-col gap-6  pt-12  md:flex-row">
+        <div className="flex flex-col gap-6 pt-12 md:flex-row">
           {gift.map((item) => (
             <div
-              className="gift-item flex-center flex-1 gap-4 px-10 py-4  md:p-0 "
+              className="gift-item flex-center flex-1 gap-4 px-10 py-4 md:p-0 "
               key={item.id}
             >
-              <div className="gift-img mb-2 md:h-[240px] md:w-[240px]">
+              <div className="gift-img w-full mb-2 md:h-[240px] md:w-[240px]">
                 <img
                   src={item.img}
                   className="gift-img-in h-full object-cover"

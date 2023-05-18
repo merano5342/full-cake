@@ -62,14 +62,14 @@ const Shopline = () => {
           <button className="btn-primary">查看更多</button>
         </section>
 
-        <div className="product-box flex w-auto justify-center gap-3 pt-12">
+        <div className="product-box flex gap-3 py-12">
           {shopItems.map((item) => (
             <div className="gift-item flex-center flex-1 gap-4" key={item.id}>
-              <div className="gift-img mb-2 h-[300px] min-w-[200px] ">
+              <div className=" mb-2 h-[300px] min-w-[200px] ">
                 <img
                   src={item.img}
-                  className="gift-img-in h-full object-cover"
-                  alt=""
+                  className=" h-full object-cover"
+                  alt="./"
                 />
               </div>
 

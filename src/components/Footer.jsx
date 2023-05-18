@@ -1,7 +1,11 @@
 import Logo from '../images/logo/zh-logo-w.svg';
-import gift1 from '../images/cake-3.png';
-import gift2 from '../images/bag-03.jpg';
-import gift3 from '../images/cake-2.jpg';
+
+import gift1 from '../images/stickers.jpg';
+import gift2 from '../images/cake-1.jpg';
+import gift3 from '../images/bag-06.jpg';
+import gift4 from '../images/cake-3.png';
+import gift5 from '../images/bag-04.jpg';
+import gift6 from '../images/card-3.jpg';
 
 import icon1 from '../images/logo/facebook-logo.png';
 import icon2 from '../images/logo/instagram-logo.png';
@@ -23,7 +27,7 @@ const Footer = () => {
     },
     ig: {
       title: 'Instagram feed',
-      item: [gift1, gift2, gift3, gift2, gift3, gift1],
+      item: [gift1, gift2, gift3, gift4, gift5, gift6],
     },
     email: {
       title: '訂閱電子報',
@@ -54,7 +58,7 @@ const Footer = () => {
           <h3 className="font-semi uppercase md:text-left">{data.ig.title}</h3>
           <div className="grid grid-cols-3 gap-2 pt-6">
             {data.ig.item.map((x) => (
-              <img src={x} alt="" className="h-20 w-20 object-cover" />
+              <img src={x} alt="" className="h-20 w-20 object-cover cursor-pointer" />
             ))}
           </div>
         </div>
