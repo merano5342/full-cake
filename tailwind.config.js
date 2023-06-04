@@ -19,8 +19,7 @@ module.exports = {
       white: '#ffffff',
       gray: 'hsl(0, 0%, 48%)',
 
-      softRed: 'hsl(10,79%,65%)',
-      cyan: 'hsl(186,34%,60%)',
+      pink: '#f67599',
 
       darkBrown: 'hsl(25, 47%, 15%)',
       mediumBrown: 'hsl(28, 10%, 53%)',

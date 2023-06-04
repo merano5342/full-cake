@@ -85,6 +85,13 @@ body {
     letter-spacing: 0.1rem;
     text-decoration: none;
   }
+  input {
+    width: 100%;
+    border-radius: 0.4rem;
+    &:focus {
+      outline: #eb6b9b 2px solid;
+    }
+  }
 
   .greenText {
     color: var(--moderate-cyan);
@@ -97,6 +104,7 @@ body {
   text-transform: uppercase;
   background-color: var(--primary);
   color: var(--white);
+  border-radius: 0;
   &:hover {
     outline: var(--primary) 2px solid;
     background-color: var(--white);
@@ -136,8 +144,17 @@ body {
   align-items: center;
   height: 50px;
   padding: 50px;
-  a {
-    color: var(--primary);
+  background-color: var(--secondary);
+  border-bottom: var(--white) 1px solid;
+  &[data-page='main'] {
+    background-color: none;
+    .item-title {
+      color: var(--primary);
+    }
+  }
+  .item-title {
+    font-weight: 400;
+    color: white;
   }
 
   .logoIcon {
@@ -166,7 +183,6 @@ body {
       // width: 120px;
       display: flex;
       justify-content: center;
-      color: var(--primary);
 
       &:last-child {
         border-bottom: none;
@@ -187,7 +203,8 @@ body {
 section {
   margin: 0 auto;
   max-width: 900px;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 button {
@@ -215,7 +232,7 @@ input[type='number'] {
 
   .gift-img {
     overflow: hidden;
-    aspect-ratio:1;
+    aspect-ratio: 1;
     .gift-img-in {
       transition: opacity 0.5s ease-in-out;
       opacity: 100%;
@@ -292,7 +309,7 @@ input[type='number'] {
         .navItem {
           border: none;
           padding: 0;
-          a {
+          .item-title {
             position: relative;
             &:hover {
               &::after {
@@ -303,7 +320,7 @@ input[type='number'] {
                 content: '';
                 width: 100%;
                 height: 2px;
-                background-color: var(--primary);
+                background-color: var(--white);
               }
             }
           }
@@ -317,6 +334,43 @@ input[type='number'] {
       .navItemsClosed {
         display: none;
       }
+    }
+  }
+}
+
+#cart {
+  .item-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .form-title {
+    text-align: left;
+    color: black;
+    font-weight: 500;
+  }
+  .btn {
+    display: flex;
+    gap: 10px;
+    &[data-active='false'] {
+      opacity: 0;
+    }
+  }
+  .btn-primary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    border-radius: 8px;
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:disabled,
+    &:focus {
+      color: #fff;
+      background-color: var(--secondary);
+      border-color: var(--secondary);
+      outline: none;
     }
   }
 }

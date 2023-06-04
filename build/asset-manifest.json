@@ -1,11 +1,16 @@
 {
   "files": {
-    "main.css": "/full-cake/static/css/main.1c180dd5.css",
-    "main.js": "/full-cake/static/js/main.75dc25ad.js",
+    "main.css": "/full-cake/static/css/main.93d630bb.css",
+    "main.js": "/full-cake/static/js/main.c67611f0.js",
     "static/media/cake-3.png": "/full-cake/static/media/cake-3.8966dbe7679294da4444.png",
+    "static/media/stickers.jpg": "/full-cake/static/media/stickers.579b509f46d865eb1ef4.jpg",
     "static/media/bag-big-2.jpg": "/full-cake/static/media/bag-big-2.e2079beb5e74384c7081.jpg",
+    "static/media/cake-1.jpg": "/full-cake/static/media/cake-1.06b4f23bbbf3e4a680d8.jpg",
+    "static/media/card-3.jpg": "/full-cake/static/media/card-3.18e1183cf0bf268aa087.jpg",
     "static/media/cake-2.jpg": "/full-cake/static/media/cake-2.fbb5828cdd235be8233b.jpg",
+    "static/media/bag-06.jpg": "/full-cake/static/media/bag-06.f1dcf18a861ada9139ac.jpg",
     "static/media/bag-03.jpg": "/full-cake/static/media/bag-03.a3012b877318b9eae333.jpg",
+    "static/media/bag-04.jpg": "/full-cake/static/media/bag-04.83f7135794023bf4bace.jpg",
     "static/media/g1.png": "/full-cake/static/media/g1.8bb8bc9ebf5164ce970d.png",
     "static/media/g3.png": "/full-cake/static/media/g3.909e2d65f3bf74d5fe2a.png",
     "static/media/g4.png": "/full-cake/static/media/g4.42959d584cfc9a467e9d.png",
@@ -16,11 +21,11 @@
     "static/media/zh-logo-w.svg": "/full-cake/static/media/zh-logo-w.9ee8902d10011547874cbf42ca7e67f1.svg",
     "index.html": "/full-cake/index.html",
     "static/media/icon-hamburger.svg": "/full-cake/static/media/icon-hamburger.f8a9f0cf12d419a7d18556f98d81a47e.svg",
-    "main.1c180dd5.css.map": "/full-cake/static/css/main.1c180dd5.css.map",
-    "main.75dc25ad.js.map": "/full-cake/static/js/main.75dc25ad.js.map"
+    "main.93d630bb.css.map": "/full-cake/static/css/main.93d630bb.css.map",
+    "main.c67611f0.js.map": "/full-cake/static/js/main.c67611f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c180dd5.css",
-    "static/js/main.75dc25ad.js"
+    "static/css/main.93d630bb.css",
+    "static/js/main.c67611f0.js"
   ]
 }

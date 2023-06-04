@@ -58,7 +58,11 @@ const Footer = () => {
           <h3 className="font-semi uppercase md:text-left">{data.ig.title}</h3>
           <div className="grid grid-cols-3 gap-2 pt-6">
             {data.ig.item.map((x) => (
-              <img src={x} alt="" className="h-20 w-20 object-cover cursor-pointer" />
+              <img
+                src={x}
+                alt=""
+                className="h-20 w-20 cursor-pointer object-cover"
+              />
             ))}
           </div>
         </div>

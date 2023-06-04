@@ -1,28 +1,6 @@
-import gift1 from '../images/cake-3.png';
-import gift2 from '../images/bag-03.jpg';
-import gift3 from '../images/cake-2.jpg';
-
-const GiftBox = () => {
-  const gift = [
-    {
-      id: 1,
-      img: gift1,
-      title: '限量優惠',
-      info: 'Lorem ipsum dolor amet, consetec adipiscing elit. magna lentesque.',
-    },
-    {
-      id: 2,
-      img: gift2,
-      title: '母親節禮盒',
-      info: 'Lorem ipsum dolor amet, consetec adipiscing elit. magna lentesque.',
-    },
-    {
-      id: 3,
-      img: gift3,
-      title: '情人節禮盒',
-      info: 'Lorem ipsum dolor amet, consetec adipiscing elit. magna lentesque.',
-    },
-  ];
+// import data from './data';
+const Shop = () => {
+  const { shopItem } = data;
   return (
     <section>
       <div className="flex-center mx-auto px-4 py-10">
@@ -34,7 +12,7 @@ const GiftBox = () => {
           </p>
         </div>
         <div className="flex flex-col gap-6 pt-12 md:flex-row">
-          {gift.map((item) => (
+          {shopItem.map((item) => (
             <div
               className="gift-item flex-center flex-1 gap-4 px-10 py-4 md:p-0 "
               key={item.id}
@@ -56,4 +34,4 @@ const GiftBox = () => {
   );
 };
 
-export default GiftBox;
+export default Shop;

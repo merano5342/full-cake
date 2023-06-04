@@ -1,0 +1,105 @@
+:root {
+  --white: #ffffff;
+  --secondary: #f67599;
+  --grey-800: #2a2a2a;
+  --grey-700: #333333;
+  --grey-400: #808080;
+  --grey-300: #999999;
+
+  --site-edge-margin: 15px;
+
+  --main-font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+  --background-color: #ffffff;
+  --footer-background-color: #f6f7f8;
+  --nav-icon: #2a2a2a;
+  --social-icon: #808080;
+  --main-text: #2a2a2a;
+  --secondary-text: #808080;
+  --active-color: lightblue;
+
+  --undone-progress-border: #f0f0f5;
+  --done-progress-border: #000000;
+  --progress-current-color: #2a2a2a;
+  --progress-done-color: #ffffff;
+  --progress-undone-color: #afb1bd;
+  --pg-addr-color: #ffffff;
+  --pg-addr-bg-color: #2a2a2a;
+  --input-label: #808080;
+  --input-border: #4a4a4a;
+  --input-text: #999999;
+  --select-arrow: #2a2a2a;
+  --select-true: #2a2a2a;
+  --select-false: #999999;
+  --product-action-text: #000000;
+  --product-action-bg: #f0f0f5;
+  --left-arrow: #000000;
+
+  background-color: var(--background-color);
+  color: var(--main-text);
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  user-select: none;
+}
+
+.container {
+  margin: 0px auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+ol,
+ul {
+  padding-left: 0;
+}
+
+// button
+.btn-primary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  border-radius: 8px;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:disabled,
+  &:focus {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+  }
+}
+
+// inputs
+section {
+  label {
+    font-weight: bold;
+    color: var(--grey-400);
+  }
+
+  .input-group > input::placeholder {
+    color: var(--input-text);
+  }
+
+  .input-group > input,
+  .input-group > select {
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    width: 100%;
+    background-color: white;
+  }
+}

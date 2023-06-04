@@ -66,11 +66,7 @@ const Shopline = () => {
           {shopItems.map((item) => (
             <div className="gift-item flex-center flex-1 gap-4" key={item.id}>
               <div className=" mb-2 h-[300px] min-w-[200px] ">
-                <img
-                  src={item.img}
-                  className=" h-full object-cover"
-                  alt="./"
-                />
+                <img src={item.img} className=" h-full object-cover" alt="./" />
               </div>
 
               <p className="text-primary">{item.price}</p>
