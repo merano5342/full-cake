@@ -18,6 +18,7 @@ module.exports = {
       black: '#000000',
       white: '#ffffff',
       gray: 'hsl(0, 0%, 48%)',
+      lightGray: 'hsl(0, 0%, 68%)',
 
       pink: '#f67599',
 

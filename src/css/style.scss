@@ -29,7 +29,6 @@
 body,
 html,
 #root {
-  overflow-x: hidden;
   height: 100vh;
   padding: 0;
   margin: 0;
@@ -37,7 +36,8 @@ html,
 }
 
 body {
-  // top: -50px;
+  overflow-x: hidden;
+
   z-index: -1;
   font-family: var(--font-family);
   background-color: var(--white);
@@ -120,6 +120,16 @@ body {
     background-color: var(--primary);
   }
 }
+.btn-outline-red {
+  padding: 6px 20px;
+  outline: var(--primary) 2px solid;
+  color: var(--primary);
+  text-transform: uppercase;
+  &:hover {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+}
 
 .flex-center {
   display: flex;
@@ -152,9 +162,13 @@ body {
       color: var(--primary);
     }
   }
+  .navItem {
+    width: 100%;
+  }
   .item-title {
     font-weight: 400;
-    color: white;
+    color: var(--secondary);
+    width: 100%;
   }
 
   .logoIcon {
@@ -180,7 +194,7 @@ body {
     .navItem {
       padding: 20px;
       border-bottom: 1px solid var(--very-light-gray);
-      // width: 120px;
+      width: auto;
       display: flex;
       justify-content: center;
 
@@ -311,6 +325,7 @@ input[type='number'] {
           padding: 0;
           .item-title {
             position: relative;
+            color: white;
             &:hover {
               &::after {
                 opacity: 80%;

@@ -8,14 +8,18 @@ const Nav = (props) => {
 
   const [activeHamburger, setActiveHamburger] = useState(false);
   const itemsL = [
-    { id: 'main', title: '首頁' },
-    { id: 'info', title: '關於富客' },
-    { id: 'news', title: '最新消息' },
+    { id: 'main', title: '首頁', url: 'main' },
+    { id: 'info', title: '關於富客', url: 'main' },
+    {
+      id: 'news',
+      title: '最新消息',
+      url: 'https://www.instagram.com/fullcake.tw/',
+    },
   ];
   const itemsR = [
     { id: 'all-product', title: '全部商品', url: 'shop' },
     { id: 'shop-cart', title: '購物車', url: 'cart' },
-    { id: 'contact', title: '聯絡我們' },
+    { id: 'contact', title: '聯絡我們', url: 'main' },
   ];
   return (
     <div className={`nav bg-${page === 'main' ? 'white' : 'secondary'}`}>
@@ -32,7 +36,15 @@ const Nav = (props) => {
           <button
             key={item.id}
             className="navItem"
-            onClick={() => setPage(item.url)}
+            onClick={() => {
+              if (item.url.length > 10) {
+                console.log('nnn');
+                window.open(item.url, '_blank');
+              } else {
+                setPage(item.url);
+              }
+              setActiveHamburger(false);
+            }}
           >
             <div className="item-title">{item.title}</div>
           </button>
@@ -44,7 +56,10 @@ const Nav = (props) => {
           <button
             key={item.id}
             className="navItem"
-            onClick={() => setPage(item.url)}
+            onClick={() => {
+              setPage(item.url);
+              setActiveHamburger(false);
+            }}
           >
             <div className="item-title">{item.title}</div>
           </button>

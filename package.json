@@ -11,6 +11,7 @@
     "deploy": "DISABLE_ESLINT_PLUGIN=true gh-pages -d build"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "classnames": "^2.3.1",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",

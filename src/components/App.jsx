@@ -62,24 +62,25 @@ const App = () => {
   }, [step, dispatch, state]);
   return (
     <CartContext.Provider value={providerValue}>
-      <div className="relative pt-[100px]">
+      <div className="relative" id="app">
         <div className="fixed top-0 z-10 w-full">
           <Nav />
         </div>
+        <div className="wrapper relative top-[100px]">
+          {page === 'main' && (
+            <>
+              <Banner setPage={setPage} />
 
-        {page === 'main' && (
-          <>
-            <Banner setPage={setPage} />
-
-            <GiftBox />
-            <Shopline />
-            <Intro />
-            <Recommend />
-            <Footer />
-          </>
-        )}
-        {page === 'cart' && <Cart />}
-        {page === 'shop' && <Shop />}
+              <GiftBox />
+              <Shopline />
+              <Intro />
+              <Recommend />
+              <Footer />
+            </>
+          )}
+          {page === 'cart' && <Cart />}
+          {page === 'shop' && <Shop />}
+        </div>
       </div>
     </CartContext.Provider>
   );
